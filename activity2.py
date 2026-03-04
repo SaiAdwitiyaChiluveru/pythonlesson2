@@ -1,8 +1,21 @@
-x = 5
-y = "John"
-print(x)
-print(y)
-codingal = ("codingal")
-print(codingal)
-name = input("enter your name: Sai Adwitiya")
-print("\nHello", name, "\nwelcome to codingal")
+name = "Penguin"
+age = 15
+is_student = True
+weight = 38.5
+
+print("Name :", name)
+print("Data type of name is", type(name))
+print("Age :", age)
+print("Data type of age is", type(age))
+print("is_student :", is_student)
+print("Data type of is_student is", type(is_student))
+print("Weight :", weight)
+print("Data type is weight is", type(weight))
+
+print("\n After Type Casting......")
+age = str(age)
+print(age)
+print("Data type of age is", TYPE(age))
+weight = int(weight)
+print(weight)
+print("Data type is weight is", type(weight))
