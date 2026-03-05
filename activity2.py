@@ -1,21 +1,8 @@
-name = "Penguin"
-age = 15
-is_student = True
-weight = 38.5
+Amount = int(input("Please enter amount for withdraw:"))
+note_1 = Amount//100
+note_2 = (Amount%100)//50
+note_3 = ((Amount%100)%50)//10
 
-print("Name :", name)
-print("Data type of name is", type(name))
-print("Age :", age)
-print("Data type of age is", type(age))
-print("is_student :", is_student)
-print("Data type of is_student is", type(is_student))
-print("Weight :", weight)
-print("Data type is weight is", type(weight))
-
-print("\n After Type Casting......")
-age = str(age)
-print(age)
-print("Data type of age is", TYPE(age))
-weight = int(weight)
-print(weight)
-print("Data type is weight is", type(weight))
+print("Notes of 100 rupee", note_1)
+print("Notes of 50 rupee", note_2)
+print("Notes of 10 rupee", note_3)
