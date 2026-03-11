@@ -1,8 +1,7 @@
-Amount = int(input("Please enter amount for withdraw:"))
-note_1 = Amount//100
-note_2 = (Amount%100)//50
-note_3 = ((Amount%100)%50)//10
-
-print("Notes of 100 rupee", note_1)
-print("Notes of 50 rupee", note_2)
-print("Notes of 10 rupee", note_3)
+actual_cost = float(input(" Please Enter the Actual Product Price:"))
+sale_amount = float(input(" Please Enter the Sales Amount:"))
+if (sale_amount > actual_cost):
+    amount = sale_amount  - actual_cost
+    print("Total profit = {0}".format(amount)) 
+else:
+    print("No profit!!!!")
