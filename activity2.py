@@ -1,7 +1,22 @@
-actual_cost = float(input(" Please Enter the Actual Product Price:"))
-sale_amount = float(input(" Please Enter the Sales Amount:"))
-if (sale_amount > actual_cost):
-    amount = sale_amount  - actual_cost
-    print("Total profit = {0}".format(amount)) 
-else:
-    print("No profit!!!!")
+a = 10
+b = 12
+c = 12
+print(a != b)
+print(b != c)
+
+a = "python"
+b = "coding"
+
+if a != b :
+    print(a, 'and', b, 'are different.')
+
+a = 4
+b = 5
+
+if (a == 1) != (b == 5):
+    print('Hello')
+
+a = int(input("Enter a number:"))
+
+if a%2 != 0 :
+    print(a, "is not an even number.")
