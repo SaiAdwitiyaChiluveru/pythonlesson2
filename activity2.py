@@ -1,22 +1,16 @@
-a = 10
-b = 12
-c = 12
-print(a != b)
-print(b != c)
+units = int(input(" Please enter the number of units you consumed : "))
+if(units < 50):
+    amount = units * 2.60
+    surcharge = 25
+elif(units <= 100):
+    amount = 130 + ((units - 50)* 3.25)
+    surcharge = 35
+elif(units <= 200):
+    amount = 130 + 162.50 + ((units - 100)* 5.26)
+    surcharge = 45
+else:
+    amount = 130 + 162.50 + 526 + ((units - 200)* 8.45)
+    surcharge = 75
 
-a = "python"
-b = "coding"
-
-if a != b :
-    print(a, 'and', b, 'are different.')
-
-a = 4
-b = 5
-
-if (a == 1) != (b == 5):
-    print('Hello')
-
-a = int(input("Enter a number:"))
-
-if a%2 != 0 :
-    print(a, "is not an even number.")
+total = amount + surcharge
+print("\nElectricity Bill = %.2f"  %total)

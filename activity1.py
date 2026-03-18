@@ -1,20 +1,10 @@
-a = 10
-b = 12
-c = 0
-if a and b and c:
-    print("All the numbers have boolean value as True.")
+medical_cause = input("Did you have a medical cause? (Y/N): ").strip().upper()
+if medical_cause == 'Y':
+    print("You are allowed")
 else:
-    print("Atleast one number has boolean value as False.")
+     atten = int(input("Enter the attendance of the student: "))
 
-a = 10
-b = -10
-c = 0
-if a > 0 or b > 0:
-    print("Either of the number is greater then 0")
-else:
-    print("No number is greater than 0")
-
-if b > 0 or c > 0:
-     print("Either of the number is greater then 0")
-else:
-    print("No number is greater than 0")      
+     if atten >= 75:
+       print("Allowed")
+     else:
+         print("Not allowed")
