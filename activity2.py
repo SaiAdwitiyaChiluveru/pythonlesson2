@@ -1,6 +1,3 @@
-string = input("Please enter your own string : ")
-string2 = ('')
-for i in string:
-    string2 = i + string2
-    print("\nThe Original String = ", string)
-    print("\nThe reversed string =", string2)
+i = 0
+while i<=0:
+        print("I will run forever")

@@ -1,5 +1,7 @@
-n = int(input("Enter the number whose sum you want to find : "))
+n = int(input("Enter the value of terms: "))
 sum = 0
-for i in range(1, n+1):
+i = 1
+while 1<=n:
     sum = sum + i
-print("\nSum =", sum)
+    i =i+1
+    print("\nSum =", sum)
