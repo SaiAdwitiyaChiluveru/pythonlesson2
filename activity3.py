@@ -1,12 +1,29 @@
-num = int(input("Enter a number: "))
-sum = 0
-temp = num
-while temp > 0:
-    digit = temp % 10
-    sum += digit ** 3
-    temp //= 10
-
-if num == sum:
-    print(num, "This is an amstrong number")  
+rowSize = int(input("enter the number of rows: "))
+if rowSize % 2 == 0: 
+    halfDiamRow = int(rowSize / 2)
 else:
-    print(num, "This is not an amstrong number")
+    halfDiamRow = int(rowSize / 2) + 1
+space = halfDiamRow - 1
+for i in range(1, halfDiamRow + 1): 
+    for j in range(1, space + 1):
+        print(end=" ")
+    space = space - 1
+    num = 1
+    for j in range(2 * i - 1):
+        print(end=str(num))
+        num = num + 1
+    print()
+space = 1
+for i in range(1, halfDiamRow): 
+    for j in range(1, space+1): 
+        print(end=" ")
+    space = space+1
+for i in range(1, halfDiamRow): 
+    for j in range(1, space+1):
+      print(end="")
+      space = space + 1
+    num = 1
+    for j in range(1, 2*(halfDiamRow-i)):
+        print(end=str(num))
+        num = num+1
+    print()
