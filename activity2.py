@@ -1,12 +1,14 @@
-import random
-import time
-def getRandomDate(startDate, endDate ): #defining function
-print("Printing random date between", startDate, " and ", endDate)
-randomGenerator = random.random()
-dateFormat = '%m/%d/%Y'
-startTime = time.mktime(time.strptime(startDate, dateFormat))
-endTime = time.mktime(time.strptime(endDate, dateFormat))
-randomTime = startTime + randomGenerator * (endTime - startTime)
-randomDate = time.strftime(dateFormat, time.localtime(randomTime))
-return randomDate
-print ("Random Date = ", getRandomDate("1/1/2016", "12/12/2018"))
+def palind(r):
+    e = len(r) -1
+    s = 0
+    while (s<e):
+        if(r[s]!=r[e]):
+            return False
+        s+=1
+        e-=1
+    return True
+    r = (1, 2, 3, 3, 2, 1)
+    if palind(r):
+        print("The tuple is Flip-Flop")
+    else:
+        print("The tuple  is not Flip-Flop")
